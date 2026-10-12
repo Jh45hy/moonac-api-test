@@ -1,4 +1,4 @@
-php
+
 <?php
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -10,8 +10,7 @@ if ($method === 'GET') {
     echo json_encode([
         'ok' => true,
         'service' => 'MoonAntiCheat API Test',
-        'message' => 'PHP API çalışıyor',
-        'post_test' => '/?test=post'
+        'message' => 'PHP API çalışıyor'
     ], JSON_UNESCAPED_UNICODE);
     exit;
 }
